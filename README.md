@@ -13,6 +13,20 @@ also provided if you want to try from scratch.
 
 ![DexMV Teaser](docs/teaser.png)
 
+## Bibtex
+
+```
+@misc{qin2021dexmv,
+      title={DexMV: Imitation Learning for Dexterous Manipulation
+      from Human Videos},
+      author={Qin, Yuzhe and Wu, Yueh-Hua and Liu, Shaowei and Jiang, Hanwen, 
+      and Yang, Ruihan and Fu, Yang and Wang, Xiaolong},
+      year={2021},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+      }
+```
+
 ## Installation
 
 1. Install the MuJoCo. It is recommended to use conda to manage python package:
@@ -147,19 +161,6 @@ If you want to use our simulated environment for your own research, check the [e
 
 For more details about demonstration generation, check the [demo_generation.md](docs/demo_gen.md)
 
-## Bibtex
-
-```
-@misc{qin2021dexmv,
-      title={DexMV: Imitation Learning for Dexterous Manipulation
-      from Human Videos},
-      author={Qin, Yuzhe and Wu, Yueh-Hua and Liu, Shaowei and Jiang, Hanwen, 
-      and Yang, Ruihan and Fu, Yang and Wang, Xiaolong},
-      year={2021},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-      }
-```
 
 ## Acknowledge
 
