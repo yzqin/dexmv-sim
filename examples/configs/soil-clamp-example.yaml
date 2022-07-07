@@ -1,0 +1,24 @@
+BC_INIT: false
+DEMO_FILE: ../demonstrations/relocate-large_clamp.pkl
+ENV_NAME: relocate-large_clamp-0.8
+JOB_DIR: ./training_log
+JOB_NAME: trpo
+NUM_ITER: 2000
+POLICY_INIT_LOG_STD: 0.0
+POLICY_WS:
+- 32
+- 32
+RNG_SEED: 100
+SAVE_FREQ: 100
+NUM_CPU: 8
+SOIL:
+  ADV_W: 0.1
+  ENABLED: true
+  LAM0: 0.01
+  LAM1: 0.99
+  LR: 1e-3
+  MB_SIZE: 32
+  MLP_W: 64
+  NUM_ITER: 500
+  RBS: 1000000
+  WD: 0.0

@@ -1,0 +1,128 @@
+<mujoco model="ADROIT-relocate(v1.5)">
+  <worldbody>
+    <body name="forearm" pos="0 -0.7 0.2" quat="0.000563312 -0.000562864 0.706825 0.707388">
+      <inertial pos="0.001 -0.002 0.29" quat="0.982037 -0.0160006 0 -0.188007" mass="4" diaginertia="0.01 0.01 0.0075"/>
+      <body name="wrist" pos="0 0 0.216">
+        <inertial pos="0.003 0 0.016" quat="0.504234 0.49623 0.49523 0.504234" mass="0.3"
+                  diaginertia="0.001 0.001 0.001"/>
+        <joint name="ARRz" pos="0 0 0" axis="0 0 1" range="-0.75 0.75" damping="20"/>
+        <joint name="WRJ1" pos="0 0 0" axis="0 1 0" range="-0.524 0.175" armature="0.005" damping="0.5" user="1123"/>
+        <body name="palm" pos="0 0 0.034">
+          <inertial pos="0.006 0 0.036" quat="0.715833 0.0439898 0.0749825 0.692839" mass="0.3"
+                    diaginertia="0.001 0.001 0.001"/>
+          <joint name="WRJ0" pos="0 0 0" axis="1 0 0" range="-0.785 0.611" armature="0.005" damping="0.5" user="1122"/>
+
+          <body name="thbase" pos="0.034 -0.009 0.029" quat="0.923956 0 0.382499 0">
+            <inertial pos="0 0 0" mass="0.01" diaginertia="1e-05 1e-05 1e-05"/>
+            <joint name="THJ4" pos="0 0 0" axis="0 0 -1" range="-1.047 1.047" user="1121"/>
+            <body name="thproximal" pos="0 0 0">
+              <inertial pos="0 0 0.017" quat="0.981604 0 0.000999597 0.190923" mass="0.016"
+                        diaginertia="1e-05 1e-05 1e-05"/>
+              <joint name="THJ3" pos="0 0 0" axis="1 0 0" range="0 1.309" user="1120"/>
+              <body name="thhub" pos="0 0 0.038">
+                <inertial pos="0 0 0" mass="0.002" diaginertia="1e-05 1e-05 1e-05"/>
+                <joint name="THJ2" pos="0 0 0" axis="1 0 0" range="-0.262 0.262" user="1119"/>
+                <body name="thmiddle" pos="0 0 0">
+                  <inertial pos="0 0 0.016" quat="0.999971 -0.000999971 -0.00699979 0.00299991" mass="0.016"
+                            diaginertia="1e-05 1e-05 1e-05"/>
+                  <joint name="THJ1" pos="0 0 0" axis="0 1 0" range="-0.524 0.524" user="1118"/>
+                  <body name="thdistal" pos="0 0 0.032">
+                    <inertial pos="0 0 0.016" quat="0.99887 -0.00499935 -0.0469939 0.00499935" mass="0.016"
+                              diaginertia="1e-05 1e-05 1e-05"/>
+                    <joint name="THJ0" pos="0 0 0" axis="0 1 0" range="-1.571 0" user="1117"/>
+                    <body name="thtip" pos="0 0 0.0275"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="ffknuckle" pos="0.033 0 0.095">
+            <inertial pos="0 0 0" quat="0.520062 0.854102 0.00600072 -0.00300036" mass="0.008"
+                      diaginertia="1e-05 1e-05 1e-05"/>
+            <joint name="FFJ3" pos="0 0 0" axis="0 1 0" range="-0.436 0.436" user="1103"/>
+            <body name="ffproximal" pos="0 0 0">
+              <inertial pos="0 0 0.023" quat="0.707095 -0.00400054 0.00400054 0.707095" mass="0.014"
+                        diaginertia="1e-05 1e-05 1e-05"/>
+              <joint name="FFJ2" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1102"/>
+              <body name="ffmiddle" pos="0 0 0.045">
+                <inertial pos="0 0 0.011" quat="0.707107 0 0 0.707107" mass="0.012" diaginertia="1e-05 1e-05 1e-05"/>
+                <joint name="FFJ1" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1101"/>
+                <body name="ffdistal" pos="0 0 0.025">
+                  <inertial pos="0 0 0.015" quat="0.7071 -0.00300043 0.00300043 0.7071" mass="0.01"
+                            diaginertia="1e-05 1e-05 1e-05"/>
+                  <joint name="FFJ0" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1100"/>
+                  <body name="fftip" pos="0 0 0.026"/>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="mfknuckle" pos="0.011 0 0.099">
+            <inertial pos="0 0 0" quat="0.520062 0.854102 0.00600072 -0.00300036" mass="0.008"
+                      diaginertia="1e-05 1e-05 1e-05"/>
+            <joint name="MFJ3" pos="0 0 0" axis="0 1 0" range="-0.436 0.436" user="1107"/>
+            <body name="mfproximal" pos="0 0 0">
+              <inertial pos="0 0 0.023" quat="0.707095 -0.00400054 0.00400054 0.707095" mass="0.014"
+                        diaginertia="1e-05 1e-05 1e-05"/>
+              <joint name="MFJ2" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1106"/>
+              <body name="mfmiddle" pos="0 0 0.045">
+                <inertial pos="0 0 0.012" quat="0.707107 0 0 0.707107" mass="0.012" diaginertia="1e-05 1e-05 1e-05"/>
+                <joint name="MFJ1" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1105"/>
+                <body name="mfdistal" pos="0 0 0.025">
+                  <inertial pos="0 0 0.015" quat="0.7071 -0.00300043 0.00300043 0.7071" mass="0.01"
+                            diaginertia="1e-05 1e-05 1e-05"/>
+                  <joint name="MFJ0" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1104"/>
+                  <body name="mftip" pos="0 0 0.026"/>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="rfknuckle" pos="-0.011 0 0.095">
+            <inertial pos="0 0 0" quat="0.520062 0.854102 0.00600072 -0.00300036" mass="0.008"
+                      diaginertia="1e-05 1e-05 1e-05"/>
+            <joint name="RFJ3" pos="0 0 0" axis="0 1 0" range="-0.436 0.436" user="1111"/>
+            <body name="rfproximal" pos="0 0 0">
+              <inertial pos="0 0 0.023" quat="0.707095 -0.00400054 0.00400054 0.707095" mass="0.014"
+                        diaginertia="1e-05 1e-05 1e-05"/>
+              <joint name="RFJ2" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1110"/>
+              <body name="rfmiddle" pos="0 0 0.045">
+                <inertial pos="0 0 0.012" quat="0.707107 0 0 0.707107" mass="0.012" diaginertia="1e-05 1e-05 1e-05"/>
+                <joint name="RFJ1" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1109"/>
+                <body name="rfdistal" pos="0 0 0.025">
+                  <inertial pos="0 0 0.015" quat="0.7071 -0.00300043 0.00300043 0.7071" mass="0.01"
+                            diaginertia="1e-05 1e-05 1e-05"/>
+                  <joint name="RFJ0" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1108"/>
+                  <body name="rftip" pos="0 0 0.026"/>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="lfmetacarpal" pos="-0.017 0 0.044">
+            <inertial pos="-0.014 0.001 0.014" quat="0.709167 -0.0920216 -0.0630148 0.696164" mass="0.075"
+                      diaginertia="1e-05 1e-05 1e-05"/>
+            <joint name="LFJ4" pos="0 0 0" axis="0.570977 0 0.820966" range="0 0.698" user="1116"/>
+            <body name="lfknuckle" pos="-0.017 0 0.044">
+              <inertial pos="0 0 0" quat="0.520062 0.854102 0.00600072 -0.00300036" mass="0.008"
+                        diaginertia="1e-05 1e-05 1e-05"/>
+              <joint name="LFJ3" pos="0 0 0" axis="0 1 0" range="-0.436 0.436" user="1115"/>
+              <body name="lfproximal" pos="0 0 0">
+                <inertial pos="0 0 0.023" quat="0.707095 -0.00400054 0.00400054 0.707095" mass="0.014"
+                          diaginertia="1e-05 1e-05 1e-05"/>
+                <joint name="LFJ2" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1114"/>
+                <body name="lfmiddle" pos="0 0 0.045">
+                  <inertial pos="0 0 0.012" quat="0.707107 0 0 0.707107" mass="0.012" diaginertia="1e-05 1e-05 1e-05"/>
+                  <joint name="LFJ1" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1113"/>
+                  <body name="lfdistal" pos="0 0 0.025">
+                    <inertial pos="0 0 0.015" quat="0.7071 -0.00300043 0.00300043 0.7071" mass="0.01"
+                              diaginertia="1e-05 1e-05 1e-05"/>
+                    <joint name="LFJ0" pos="0 0 0" axis="1 0 0" range="0 1.571" user="1112"/>
+                    <body name="lftip" pos="0 0 0.026"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
