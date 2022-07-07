@@ -168,3 +168,6 @@ from [robosuite](https://github.com/ARISE-Initiative/robosuite), [soil](https://
 [dapg](https://github.com/aravindr93/hand_dapg) , [dm_control](https://github.com/deepmind/dm_control),
 [py-min-jerk](https://github.com/dkebude/py-min-jerk). We gratefully thank the authors of these amazing projects.
 
+We also thank for Jiashun Wang for insightful discussions for the connection between human and robot hand, and thanks
+the DexPilot authors for their detailed explanation of their method.
+
