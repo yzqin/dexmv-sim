@@ -3,8 +3,10 @@
 [[Project Page]](https://yzqin.github.io/dexmv/) [[Paper]](https://arxiv.org/abs/2108.05877) [[Demonstration Files]](https://drive.google.com/file/d/1v-SezFDQBcgekHZBlqulqa8rIgn0iwRT/view?usp=sharing)
 -----
 
-DexMV is a novel system and pipeline for learning dexterous manipulation from human demonstration videos.
+[DexMV: Imitation Learning for Dexterous Manipulation from Human Videos](https://yzqin.github.io/dexmv/), Yuzhe Qin*,
+Yueh-Hua Wu*, Shaowei Liu, Hanwen Jiang, Ruihan Yang, Yang Fu, Xiaolong Wang, ECCV 2022.
 
+DexMV is a novel system and pipeline for learning dexterous manipulation from human demonstration videos.
 This repo contains the **simulated environment** code for DexMV. The learning part for DexMV is maintained
 in [dexmv-learn](https://github.com/yzqin/dexmv-learn).
 
@@ -160,7 +162,6 @@ If you want to use our simulated environment for your own research, check the [e
 ## Demonstration Generation
 
 For more details about demonstration generation, check the [demo_generation.md](docs/demo_gen.md)
-
 
 ## Acknowledge
 
