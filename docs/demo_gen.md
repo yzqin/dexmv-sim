@@ -18,16 +18,16 @@ In DexMV, we measure the pose of table with respect to camera. Which is fixed du
 ## Trajectory Interpolation/Time Parameterization
 
 To use inverse dynamics functions, we need to first compute the velocity and acceleration of robot joint. In this step, time step is aligned between real world measurement and simulation timestep.
-For more details, please check the code in [this directory](../simulation/hand_imitation/kinematics/demonstration)
+For more details, please check the code in [this directory](../hand_imitation/kinematics/demonstration)
 
 ## Inverse Dynamics
 
 The inverse dynamics is computed via the MuJoCo API. The input is joint position, velocity, and acceleration. The output is joint torque.
-For more details, please check [this file](../simulation/hand_imitation/kinematics/demonstration/base.py)
+For more details, please check [this file](../hand_imitation/kinematics/demonstration/base.py)
 
 ## Hindsight Target
 Relocate is a goal-oriented task. For demonstration, we set the object pose in last frame as the target pose(in face we only consider position)
-For more details, please check [this file](../simulation/hand_imitation/kinematics/demonstration/relocation_demo.py)
+For more details, please check [this file](../hand_imitation/kinematics/demonstration/relocation_demo.py)
 
 
 
