@@ -12,7 +12,7 @@ from hand_imitation.env.environments.mug_place_object_env import MugPlaceObjectE
 from hand_imitation.env.environments.mug_pour_water_env import WaterPouringEnv
 from hand_imitation.env.environments.ycb_relocate_env import YCBRelocate
 
-from mjrl.algos.behavior_cloning_2 import BC
+from mjrl.algos.behavior_cloning import BC
 from mjrl.algos.dapg import DAPG
 from mjrl.algos.density_onpg import DensityONPG
 from mjrl.algos.soil import SOIL
