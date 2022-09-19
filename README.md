@@ -44,7 +44,9 @@ MuJoCo on your computer, please skip this step. Note that we use MuJoCo 2.0 for 
 git clone https://github.com/yzqin/dexmv-sim
 export DEXMV_PACKAGE_PATH=`pwd`
 cd dexmv-sim
-conda env create -f environment.yml
+
+# The provoided package version in the yml is our testing environment, you do not need to follow the version of each python package precisely to run this code.
+conda env create -f environment.yml 
 conda activate dexmv
 pip install -e .
 
